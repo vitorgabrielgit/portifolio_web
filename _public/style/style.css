@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pagStart
+{
+    position: absolute;
+    background: #1d1d1d;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+}
+.btn3d
+{
+    position: absolute;
+
+    background: transparent;
+
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.4rem;
+    padding: 1.5rem;
+    width: 15rem;
+    height: 5.5rem;
+
+    border: 0.1rem solid #fff;
+
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.btn3d:hover
+{
+    transform: skewY(-15deg);
+
+    background: #fefefe;
+    color: #000;
+    border: 0.1rem solid #000;
+
+}
+.btn3d::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 5.4rem;
+    background: #fefefe52;
+    margin-left: -2.9rem;
+    margin-top: -2rem;
+    transform: skewY(35deg);
+    transition: .5s;
+    transition: .5s;
+    display: none;
+}
+.btn3d:hover::before
+{
+    display: block;
+}
+.btn3d::after
+{
+    content: '';
+    position: absolute;
+    background: #fefefea6;
+    width: 14.8rem;
+    height: 15px;
+    margin-top: -5.4rem;
+    margin-left: -2.3rem;
+    transform: skewX(55deg);
+    transition-delay: .3s;
+    transition: .5s;
+    display: none;
+}
+.btn3d:hover::after
+{
+    display: block;
+}
+
+            /* main pag */
+#mainPag
+{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin-top: 75%;
+}
